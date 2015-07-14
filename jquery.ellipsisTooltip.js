@@ -42,7 +42,7 @@
             if (tooltip) {
                 styleEllipsis(tooltip);
                 params.ellipsis
-				  .attr("title", params.ellipsis.text())
+				  .attr("title", params.ellipsis.text() === "" ? params.ellipsis.val() : params.ellipsis.text())
 				  .tooltip({
 				      placement: params.placement,
 				      container: params.container,
